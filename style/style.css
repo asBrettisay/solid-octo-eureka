@@ -1,0 +1,37 @@
+.body-container {
+  background-color: #cfd1d6;
+  margin: 25px auto;
+  height: 90vh;
+  width: 90vw;
+
+}
+
+.header {
+  height: 200px;
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #000;
+}
+
+.profilePic {
+  display: inline-block;
+  float: left;
+}
+
+.profilePic img {
+  height: 200px;
+}
+
+.name {
+  display: inline-block;
+  float: right;
+  box-sizing: border-box;
+  font-size: 3em;
+  padding: 75px 0 75px 0;
+  height: 200px;
+}
+
+
+.main h1 {
+  margin: auto;
+}
