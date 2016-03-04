@@ -13,4 +13,33 @@ angular.module('personalApiApp', ['ui.router'])
         }
       }
     })
+    .state('me', {
+      url: '/me',
+      templateUrl: 'views/me.html',
+      controller: function($scope, hobbies, occupations) {
+        $scope.hobbies = hobbies;
+        $scope.jobs = occupations;
+      },
+
+
+      resolve: {
+        hobbies: function(profileService) {
+          return profileService.getHobbies();
+        },
+
+        occupations: function(profileService) {
+          return profileService.getOccupations();
+        }
+      }
+    })
+    .state('skillz', {
+      url: '/skillz',
+      templateUrl: 'views/skillz.html',
+      resolve: {
+        skills: function(profileService) {
+          return profileService.getSkills();
+        }
+      },
+      controller: 'skillCtrl'
+    })
 })

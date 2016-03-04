@@ -35,3 +35,18 @@
 .main h1 {
   margin: auto;
 }
+
+.nav-bar {
+  list-style-type: none;
+  height: 10vh;
+  width: 75%;
+  margin: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.me-main div {
+  display: inline-block;
+  float: left;
+}

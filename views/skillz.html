@@ -1,0 +1,12 @@
+<h2>Skills</h2>
+<div class="skills-list">
+  <ul ng-repeat="skill in skills">
+    <li>{{skill.name}}: {{skill.experience}}</li>
+  </ul>
+
+  <form name="newSkillForm">
+    <input type="text" name="skill" ng-model="skill.name">
+    <select ng-model="skill.experience" ng-options="prop as val for (prop, val) in options"></select>
+    <button type="submit" name="submit" ng-click="newSkill(skill)">Submit New Skill</button>
+  </form>
+</div>
